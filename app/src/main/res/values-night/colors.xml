@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default Colors  -->
+    <color name="default_text_color">#FFFFFF</color>
+
+    <!-- Statistics -->
+    <color name="item_list_ranking_bg">#494848</color>
+
+
+</resources>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTilteDialogProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Profile Settings"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/main_activity_carview_selected"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            >
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/etAddDialogProfileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Profile Name"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/poppins"
+            >
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Web Taxes"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            android:textColor="@color/main_activity_carview_selected"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            >
+
+        </TextView>
+
++
+        <EditText
+            android:id="@+id/etAddDialogWebName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Web Name"
+            android:layout_margin="4dp"
+            android:fontFamily="@font/poppins"
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/etAddDialogWebTax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Web Tax"
+            android:layout_margin="4dp"
+            android:inputType="numberDecimal"
+            android:fontFamily="@font/poppins"
+            >
+        </EditText>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Courier Taxes"
+            android:textAllCaps="true"
+            android:textColor="@color/main_activity_carview_selected"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            >
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/etAddDialogCourierName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Courier Name"
+            android:layout_margin="4dp"
+            android:fontFamily="@font/poppins"
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/etAddDialogCourierPriceKg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Courier Price for kg"
+            android:layout_margin="4dp"
+            android:inputType="numberDecimal"
+            android:fontFamily="@font/poppins"
+            >
+        </EditText>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Card Taxes"
+            android:layout_marginStart="16dp"
+            android:textSize="14sp"
+            android:textColor="@color/main_activity_carview_selected"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            >
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/etAddDialogCardName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Card Name"
+            android:layout_margin="4dp"
+            android:fontFamily="@font/poppins"
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/etAddDialogCardTax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CardTax"
+            android:layout_margin="4dp"
+            android:inputType="numberDecimal"
+            android:fontFamily="@font/poppins"
+            >
+        </EditText>
+
+
+
+
+        <CheckBox
+            android:id="@+id/cbAddDialogConnectWithPaypal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="connect with paypal"
+            android:fontFamily="@font/poppins"
+            >
+
+
+        </CheckBox>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAddDialogAddProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add Profile"
+            android:background="@color/main_activity_carview_selected"
+            android:padding="8dp"
+            android:fontFamily="@font/poppins"
+            >
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+    </LinearLayout>
+</LinearLayout>

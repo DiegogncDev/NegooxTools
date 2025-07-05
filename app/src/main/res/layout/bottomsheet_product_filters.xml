@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter by"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginVertical="16dp"
+        android:fontFamily="@font/poppins"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCategoriesFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:fontFamily="@font/poppins"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <!-- Filtro por más recientes o antiguos -->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purchased Date"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        >
+
+    </TextView>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chgDateOfBuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chRecentBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Most Recent"
+            android:fontFamily="@font/poppins"
+            style="@style/Widget.Material3.Chip.Filter"
+            >
+
+        </com.google.android.material.chip.Chip>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chOldestBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:text="Most Oldest"
+            android:fontFamily="@font/poppins"
+            style="@style/Widget.Material3.Chip.Filter"
+            >
+
+        </com.google.android.material.chip.Chip>
+
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+
+
+
+    <!--  Fecha de venta   -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sold Date"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        >
+
+    </TextView>
+
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chgDateOfSale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chRecentSale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Most Recent"
+            android:fontFamily="@font/poppins"
+            style="@style/Widget.Material3.Chip.Filter"
+            >
+
+        </com.google.android.material.chip.Chip>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chOldestSale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:text="Most Oldest"
+            android:fontFamily="@font/poppins"
+            style="@style/Widget.Material3.Chip.Filter"
+            >
+
+        </com.google.android.material.chip.Chip>
+
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+    <!--  Fecha de venta   -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purchased Product"
+        android:layout_marginVertical="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        >
+
+    </TextView>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chgPurchaseProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chMostExpensiveBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Most Expensive"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:fontFamily="@font/poppins"
+            >
+
+        </com.google.android.material.chip.Chip>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chMostCheapestBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:text="Most Cheapest"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:fontFamily="@font/poppins"
+            >
+
+        </com.google.android.material.chip.Chip>
+
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+
+
+    <!--  Producto vendido   -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sold Product"
+        android:layout_marginVertical="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        >
+
+    </TextView>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chgSoldProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chMostExpensiveSale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Most Expensive"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:fontFamily="@font/poppins"
+            >
+
+        </com.google.android.material.chip.Chip>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chMostCheapestSale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:text="Most Cheapest"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:fontFamily="@font/poppins"
+            >
+
+        </com.google.android.material.chip.Chip>
+
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <!--  Profit   -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profit"
+        android:layout_marginVertical="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        >
+
+    </TextView>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chgProfit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chHighestProfit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Most Profit"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:fontFamily="@font/poppins"
+            >
+
+        </com.google.android.material.chip.Chip>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chLowerProfit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:text="Less Profit"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:fontFamily="@font/poppins"
+            >
+
+        </com.google.android.material.chip.Chip>
+
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+
+    <!--  Fecha de venta   -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sale Time"
+        android:layout_marginVertical="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins">
+
+    </TextView>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chgDelaySale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chLongestDelay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Most Slower"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:fontFamily="@font/poppins"
+            >
+
+        </com.google.android.material.chip.Chip>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chShortestDelay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:text="Most faster"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:fontFamily="@font/poppins"
+            >
+
+        </com.google.android.material.chip.Chip>
+
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+    <!-- Botón de aplicar -->
+    <Button
+        android:id="@+id/button_apply_filters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply filters"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        />
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cvItemProduct"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/product_sale_completed"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivStateProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_incomming"
+            android:layout_margin="16dp">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvProductNameView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Product Name"
+                android:layout_gravity="start|center"
+                android:textSize="16sp"
+                android:textColor="@color/default_text_color"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:fontFamily="@font/poppins"
+                >
+            </TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvItemPriceBuyProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Price"
+                    android:textSize="13sp"
+                    android:singleLine="true"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/default_text_color"
+                    >
+                </TextView>
+
+
+
+                <TextView
+                    android:id="@+id/tvItemDateBuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Date"
+                    android:textSize="13sp"
+                    android:singleLine="true"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/default_text_color"
+                    >
+                </TextView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/ivButtonEdit"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_edit">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ivButtonDelete"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_delete">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

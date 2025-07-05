@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.Material3.Chip.FilterIncomming" parent="Base.Widget.Material3.Chip">
+        <item name="android:checkable">true</item>
+        <item name="chipIconVisible">false</item>
+        <item name="closeIconVisible">false</item>
+
+    <item name="checkedIcon">@drawable/ic_m3_chip_check</item>
+
+    <item name="shapeAppearance">@macro/m3_comp_filter_chip_container_shape</item>
+    <item name="android:textAppearance">@macro/m3_comp_filter_chip_label_text_type</item>
+    <item name="chipMinHeight">@dimen/m3_comp_filter_chip_container_height</item>
+    <item name="chipIconSize">@dimen/m3_comp_filter_chip_with_icon_icon_size</item>
+    <item name="chipStrokeWidth">@dimen/m3_comp_filter_chip_flat_unselected_outline_width</item>
+
+    <item name="chipStartPadding">8dp</item>
+    <item name="iconStartPadding">0dp</item>
+
+    <item name="iconEndPadding">-2dp</item>
+    <item name="textStartPadding">8dp</item>
+    <item name="textEndPadding">6dp</item>
+
+    <item name="closeIconStartPadding">-2dp</item>
+    <item name="closeIconEndPadding">0dp</item>
+    <item name="chipEndPadding">10dp</item>
+
+    <item name="backgroundTint">@color/product_incomming</item>
+
+    </style>
+
+
+</resources>

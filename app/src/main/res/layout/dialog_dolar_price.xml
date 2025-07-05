@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/main_activity_cardview_bg"
+    android:background="@color/dialog_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/tvTitlePriceDolarDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:hint="Price of dolar: "
+            android:textColor="@color/default_text_color"
+            android:textColorHint="@color/default_text_color"
+            android:fontFamily="@font/poppins"
+            >
+
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:text="Price Converter"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/default_text_color"
+            android:fontFamily="@font/poppins"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvValueTitleDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dolar"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/default_text_color"
+            android:fontFamily="@font/poppins"
+            >
+        </TextView>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etValuePriceConverter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp"
+            android:hint="0"
+            android:maxLines="1"
+            android:textColor="@color/default_text_color"
+            android:singleLine="true"
+            android:fontFamily="@font/poppins"
+            >
+
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDialogChangeConverter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="vʌ"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/default_text_color"
+            android:background="@color/dialog_background"
+            android:fontFamily="@font/poppins"
+            >
+
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+        <TextView
+            android:id="@+id/tvResultTitleDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guaranies"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/default_text_color"
+            android:fontFamily="@font/poppins"
+            >
+        </TextView>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etResultPriceConverter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:inputType="number"
+            android:hint="0"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/default_text_color"
+            android:fontFamily="@font/poppins"
+            >
+
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDialogConverter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert"
+            android:background="@color/dialog_button_converted"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/default_text_color"
+            android:fontFamily="@font/poppins"
+            >
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

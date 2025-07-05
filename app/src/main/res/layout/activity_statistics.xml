@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".statistics.StatisticsActivity">
+
+    <TextView
+        android:id="@+id/tvStatisticsDateToday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Statistics this month"
+        android:textSize="25sp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/default_text_color"
+        >
+
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvStatisticsRanking"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvBarCharSolds"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginVertical="8dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <com.github.mikephil.charting.charts.BarChart
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/barChartRanking"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    >
+
+
+                </com.github.mikephil.charting.charts.BarChart>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/main_activity_carview_selected">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:text="Solds Chart"
+                    android:textStyle="bold"
+                    android:layout_marginHorizontal="8dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/default_text_color"
+                    >
+
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvPieChartCosts"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/pieChartRanking"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start">
+
+                    </com.github.mikephil.charting.charts.PieChart>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/main_activity_carview_selected"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:textSize="12sp"
+                        android:text="Costs Chart"
+                        android:layout_marginHorizontal="8dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/default_text_color"
+                        >
+
+                    </TextView>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvPieChartProfit"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/pieCharProfit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start">
+
+                    </com.github.mikephil.charting.charts.PieChart>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/main_activity_carview_selected"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:textSize="12sp"
+                        android:text="Profit Chart"
+                        android:layout_marginHorizontal="8dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/default_text_color"
+                        >
+
+                    </TextView>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cbShowGsStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_gravity="center"
+        android:text="Show in guaranies" />
+
+
+
+</LinearLayout>

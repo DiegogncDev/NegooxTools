@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".statistics.costs.CostsChartActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profit Chart"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginVertical="8dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/poppins"
+        >
+
+
+    </TextView>
+
+
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChartProfitChart"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginHorizontal="16dp"
+        android:clickable="false"
+        android:fontFamily="@font/poppins"
+        >
+
+
+    </com.github.mikephil.charting.charts.PieChart>
+
+
+    <!--  Filter by Year of month  -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter by Date"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:fontFamily="@font/poppins"
+        >
+
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/actvProfitChartYearsFilter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Year"
+            android:gravity="center"
+            android:inputType="none"
+            android:textSize="16sp"
+            android:padding="4dp"
+            android:fontFamily="@font/poppins"
+            >
+
+        </AutoCompleteTextView>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="16dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvProfitMonthsFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:fontFamily="@font/poppins"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+    <!--  Filter By Categories  -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter by Categories"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:fontFamily="@font/poppins"
+        >
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProfitCategoriesFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:orientation="horizontal"
+        android:fontFamily="@font/poppins"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

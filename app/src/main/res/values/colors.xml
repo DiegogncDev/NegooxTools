@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Default Colors  -->
+
+    <color name="default_text_color">#000000</color>
+
+    <!-- Main Activity Colors -->
+
+    <color name="main_activity_cardview_bg1">#12A699</color>
+    <color name="main_activity_cardview_bg">#5e5da8</color>
+
+    <color name="main_activity_carview_selected1">#0B7067</color>
+    <color name="main_activity_carview_selected">#5e5da8</color>
+
+    <color name="dialog_button_converted">#3F51B5</color>
+    <color name="dialog_background">#3F51B5</color>
+
+    <!-- Profiles Colors  -->
+
+    <color name="radio_button_mastercard">#EF6C00</color>
+    <color name="radio_button_visa">#716E6B</color>
+    <color name="radio_button_onlypaypal">#0DA4FF</color>
+    <color name="radio_button_othermethod">#1DA624</color>
+
+    <color name="cardview_info_section1">#53AB8B</color>
+    <color name="cardview_info_section">#806b8b</color>
+
+    <!--  Products DB  -->
+
+    <color name="product_incomming">#C7C8CC</color>
+    <color name="product_sale_process">#EF9C66</color>
+    <color name="product_sale_completed">#A5DD9B</color>
+    <color name="product_unknowprocess">#00838F</color>
+
+    <!--    -->
+    <color name="detail_products_title_bg">#806b8b</color>
+
+
+    <!-- Add Better Data Color -->
+    <color name="products_required_helper">#C62828</color>
+    <color name="add_better_carviews">#F6F5F2</color>
+
+    <!--  Statistics Main -->
+
+    <color name="grey">#C7C8CC</color>
+
+    <!--  Ranking   -->
+
+    <color name="item_list_ranking_bg">#FFFFFF</color>
+
+
+
+</resources>

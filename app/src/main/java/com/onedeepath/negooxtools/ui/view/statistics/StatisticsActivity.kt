@@ -29,7 +29,7 @@ import com.github.mikephil.charting.data.PieEntry
 import com.github.mikephil.charting.formatter.DefaultValueFormatter
 import com.github.mikephil.charting.formatter.IndexAxisValueFormatter
 import com.github.mikephil.charting.utils.ColorTemplate
-import com.onedeepath.negooxtools.MainActivity
+import com.onedeepath.negooxtools.ui.MainActivity
 
 import com.onedeepath.negooxtools.ui.viewmodel.statistics.charts.DateViewModel
 import com.onedeepath.negooxtools.data.local.ProductsDataBaseHelper

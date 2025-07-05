@@ -16,7 +16,7 @@ import androidx.core.widget.addTextChangedListener
 import androidx.datastore.preferences.core.doublePreferencesKey
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
-import com.onedeepath.negooxtools.MainActivity
+import com.onedeepath.negooxtools.ui.MainActivity
 import com.onedeepath.negooxtools.ui.view.aproxCalculate.AproxCalculateActivity.Companion.RESULT_CARD_NAME
 import com.onedeepath.negooxtools.ui.view.aproxCalculate.AproxCalculateActivity.Companion.RESULT_CARD_TAX
 import com.onedeepath.negooxtools.ui.view.aproxCalculate.AproxCalculateActivity.Companion.RESULT_COURIER_NAME

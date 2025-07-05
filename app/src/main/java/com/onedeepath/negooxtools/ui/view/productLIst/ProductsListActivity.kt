@@ -28,7 +28,7 @@ import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.lifecycleScope
-import com.onedeepath.negooxtools.MainActivity
+import com.onedeepath.negooxtools.ui.MainActivity
 import com.onedeepath.negooxtools.R
 import com.onedeepath.negooxtools.domain.model.currencyChanger.CurrenciesDataClass
 import com.onedeepath.negooxtools.data.local.dataStore

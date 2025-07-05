@@ -48,7 +48,7 @@
             android:name=".ui.view.aproxCalculate.AproxCalculateActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

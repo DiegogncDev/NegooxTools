@@ -15,7 +15,7 @@ import androidx.cardview.widget.CardView
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.doublePreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
-import com.onedeepath.negooxtools.MainActivity
+import com.onedeepath.negooxtools.ui.MainActivity
 import com.onedeepath.negooxtools.ui.view.addData.AddDataActivity
 import com.onedeepath.negooxtools.domain.model.currencyChanger.CurrenciesDataClass
 import com.onedeepath.negooxtools.domain.model.profiles.ProfileData

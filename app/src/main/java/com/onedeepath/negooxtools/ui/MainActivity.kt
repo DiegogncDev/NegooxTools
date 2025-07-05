@@ -1,4 +1,4 @@
-package com.onedeepath.negooxtools
+package com.onedeepath.negooxtools.ui
 
 import android.app.Dialog
 import android.content.Intent
@@ -14,6 +14,7 @@ import androidx.appcompat.widget.AppCompatEditText
 import androidx.cardview.widget.CardView
 import androidx.datastore.preferences.core.doublePreferencesKey
 import androidx.datastore.preferences.core.edit
+import com.onedeepath.negooxtools.R
 import com.onedeepath.negooxtools.ui.view.addData.AddDataActivity
 import com.onedeepath.negooxtools.ui.view.aproxCalculate.AproxCalculateActivity
 import com.onedeepath.negooxtools.domain.model.currencyChanger.CurrenciesDataClass

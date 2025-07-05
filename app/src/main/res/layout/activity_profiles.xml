@@ -9,7 +9,7 @@
     android:focusableInTouchMode="true"
     android:padding="8dp"
 
-    tools:context=".profiles.ProfilesActivity">
+    tools:context=".ui.view.profiles.ProfilesActivity">
 
     <TextView
         android:layout_width="wrap_content"

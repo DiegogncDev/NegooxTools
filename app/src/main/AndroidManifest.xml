@@ -15,37 +15,37 @@
         android:theme="@style/Theme.TrainingMindApp"
         tools:targetApi="31">
         <activity
-            android:name=".statistics.profit.ProfitChartActivity"
+            android:name=".ui.view.statistics.profitChart.ProfitChartActivity"
             android:exported="false" />
         <activity
-            android:name=".statistics.costs.CostsChartActivity"
+            android:name=".ui.view.statistics.costsChart.CostsChartActivity"
             android:exported="false" />
         <activity
-            android:name=".statistics.solds.SoldsChartActivity"
+            android:name=".ui.view.statistics.soldsChart.SoldsChartActivity"
             android:exported="false" />
         <activity
-            android:name=".statistics.ranking.RankingActivity"
+            android:name=".ui.view.statistics.ranking.RankingActivity"
             android:exported="false" />
         <activity
-            android:name=".statistics.StatisticsActivity"
+            android:name=".ui.view.statistics.StatisticsActivity"
             android:exported="false" />
         <activity
-            android:name=".productsList.DetailProductActivity"
+            android:name=".ui.view.productLIst.DetailProductActivity"
             android:exported="false" />
         <activity
-            android:name=".productsList.UpdateProductsActivity"
+            android:name=".ui.view.productLIst.UpdateProductsActivity"
             android:exported="false" />
         <activity
-            android:name=".productsList.ProductsListActivity"
+            android:name=".ui.view.productLIst.ProductsListActivity"
             android:exported="false" />
         <activity
-            android:name=".addData.AddDataActivity"
+            android:name=".ui.view.addData.AddDataActivity"
             android:exported="false" />
         <activity
-            android:name=".profiles.ProfilesActivity"
+            android:name=".ui.view.profiles.ProfilesActivity"
             android:exported="false" />
         <activity
-            android:name=".aproxCalculate.AproxCalculateActivity"
+            android:name=".ui.view.aproxCalculate.AproxCalculateActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -13,7 +13,7 @@
         android:id="@+id/tvStatisticsDateToday"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="Statistics this month"
+        tools:text="This month's Statistics"
         android:textSize="25sp"
         android:fontFamily="@font/poppins"
         android:textColor="@color/default_text_color"

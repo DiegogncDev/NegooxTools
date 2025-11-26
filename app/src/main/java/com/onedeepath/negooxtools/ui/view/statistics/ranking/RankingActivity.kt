@@ -69,11 +69,11 @@ class RankingActivity : AppCompatActivity() {
 
         TabLayoutMediator(tabLayout, pager) { tab, position ->
             tab.text = when (position) {
-                0 -> "Más Profit"
-                1 -> "Más Caro"
-                2 -> "Más Pesado"
-                3 -> "Más Vendido"
-                4 -> "Más Rápido"
+                0 -> "Most Profit"
+                1 -> "Most Expensive"
+                2 -> "High weight"
+                3 -> "Most Sold"
+                4 -> "Most faster"
                 else -> null
             }
         }.attach()
